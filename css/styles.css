@@ -163,6 +163,317 @@ h3.hello span {
   .social-icons .social-icon:hover {
     background-color: var(--skin-color);
   }
+/*about*/
+.about .about-container {
+    flex: 0 0 100%;
+    min-width: 100%;
+    /* background-color: brown; */
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    min-width: 100%;
+    /* background-color:cadetblue; */
+}
+
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about .about-content .about-text h3 span {
+    color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.dev-icons li i{
+    font-size: 2rem;
+}
+/* skills */
+.about .about-content .skills {
+    flex: 0 0 50%;
+    min-width: 50%;
+    margin-top: 10px;
+    /* background-color:darkgreen; */
+}
+
+.about .about-content .skills .skill-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+    margin-bottom: 5px;
+    /* background-color:dodgerblue ; */
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    /*首字大寫*/
+}
+
+/* 底 */
+.about .about-content .skills .skill-item .progress {
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    /*圓角*/
+    width: 100%;
+    position: relative;
+    /*留空白*/
+}
+
+/* 填 */
+.about .about-content .skills .skill-item .progress .progress-in {
+    position: absolute;
+    /*不留空白*/
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+    z-index: 1;
+}
+
+/* .about .about-content .skills .skill-item .skill-percent {
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: 0;
+    font-weight: 400;
+    line-height: 30px;
+    transform: translateY(-50%);
+    z-index: 7;
+    
+} */
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    min-width: 50%;
+    margin-top: 30px;
+    /* background-color: #ccc; */
+}
+
+.about .about-content h3.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    /* background-color: aquamarine; */
+}
+
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    min-width: 100%;
+    /* background-color:brown ; */
+}
+
+/* card */
+.about .about-content .timeline {
+    background-color: var(--be-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+    /*last-child*/
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+    /*before */
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+
+}
+
+/* 圓點點 */
+.about .about-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .timeline .timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+
+.about .about-content .timeline .timeline-date .fa {
+    margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+/* portfolio */
+.portfolio .container {
+    padding-bottom: 40px;
+    /* background-color: blueviolet; */
+}
+
+.portfolio .portfolio-heading {
+    flex: 0 0 100%;
+    min-width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio .portfolio-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.portfolio .portfolio-item {
+    flex: 0 0 33.33%;
+    min-width: 33.33%;
+    margin-bottom: 30px;
+    /* background-color:aqua; */
+}
+
+.portfolio .portfolio-item-inner {
+    border: 1px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img img {
+    width: 100%;
+    display: block;
+}
+
+/* contact */
+.contact-title {
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item {
+    flex: 0 0 25%;
+    min-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contact .contact-info-item .icon {
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa {
+    font-size: 25px;
+    color: var(--skin-color);
+}
+
+.contact .contact-info-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+
+.contact .contact-info-item p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+}
+
+/* form */
+.contact .contact-form {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+
+.contact .contact-form .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: crimson; */
+}
+
+.contact .contact-form .form-item {
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background: var(--bg-black-900);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
+.contact .contact-form .form-item .form-control:focus {
+    /*focus 取得焦點 (tab)時會被選擇*/
+    box-shadow: 0 0 20px var(--shadow-dar);
+}
+
+.contact .contact-form .form-item textarea.form-control {
+    height: 140px;
+}
+
+.contact .contact-form .btn {
+    height: 50px;
+    padding: 0 50px;
+}
 
 /* media */
 @media screen and (min-width:992px) {
@@ -176,7 +487,7 @@ h3.hello span {
     .navbar {
         width: 20%;
         height: 100vh;
-        position: fixed;
+        position: fixed;/*固定*/
 
     }
 
