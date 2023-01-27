@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Clicker+Script&family=Noto+Sans+TC:wght@300&family=Pacifico&family=Permanent+Marker&family=Pompiere&family=Poppins:wght@300;400;500;600;700&family=Silkscreen&display=swap');
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #39A6A3;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --shadow-dar: rgba(48, 46, 77, 0.15);
+    --skin-color: #39A6A3;
+}
+
+body.dark {
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+    --shadow-dar: rgba(255, 255, 255, 0.15);
+    --skin-color: #37b182;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/* 滾動框效果 */
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    /*行高*/
+    font-size: 16px;
+    font-family: 'Poppins', 'Noto Sans TC';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /*段落外框*/
+    text-decoration: none;
+    /*文字外框*/
+    box-sizing: border-box;
+    /*border padding 包含在width內*/
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: 40px;
+    /*圓角*/
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    background: var(--skin-color);
+    transition: all 0.3s ease;
+    /***/
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    /*放大1.05*/
+}
+
+.shadow-dark {
+    box-shadow: 0 0 20px var(--shadow-dar);
+}
+
+.main-container {
+    background-color: #222222;
+}
+
+/* navbar */
+.navbar {
+    background-color: var(--skin-color);
+    border-right: 1px solid var(--bg-black-50);
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    /*所有的都轉大寫*/
+}
+
+
+.navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.5);
+}
+
+/* main */
+main {
+    background-color: var(--bg-black-900);
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+.container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+/* home */
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+    /*上下15px*/
+}
+h3.hello span {
+    font-family: 'clicker script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+.typing {
+    color: var(--skin-color);
+}
+.home-info p {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: var(--text-black-700);
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    margin-top: 40px;
+  }
+  .social-icons .social-icon:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons .social-icon:hover {
+    background-color: var(--skin-color);
+  }
+
+/* media */
+@media screen and (min-width:992px) {
+
+    .navbar .container-fluid,
+    .navbar-expand-lg .navbar-collapse,
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+
+    }
+
+    main {
+        margin-left: 20%;
+        margin-top: 20px;
+
+    }
+       
+    h3.hello span {
+        margin-left: 5px;
+        font-size: 40px;
+        
+    } 
+    .home-info{
+        text-align: center;
+    }
+    .home-info p{
+        margin-left: 20px;
+    }
+}
