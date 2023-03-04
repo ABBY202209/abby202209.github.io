@@ -1,4 +1,4 @@
-<h1> <a href="https://abby202209.github.io/"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=65A172&center=%E9%8C%AF%E8%AA%A4%E7%9A%84&vCenter=%E9%8C%AF%E8%AA%A4%E7%9A%84&repeat=%E7%9C%9F%E7%9A%84&width=435&lines=Hello;I'm+chia-chin;I'm+learning+web+design...|&size=27"> </a> </h1>
+<h1> <a href="https://abby202209.github.io/"> <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=65A172&center=%E9%8C%AF%E8%AA%A4%E7%9A%84&vCenter=%E9%8C%AF%E8%AA%A4%E7%9A%84&repeat=%E7%9C%9F%E7%9A%84&width=435&lines=Hello;I'm+chia-chin;I'm+learning+web+design...&size=27"> </a><img src="https://raw.githubusercontent.com/aemmadi/aemmadi/master/wave.gif" width="30"> </h1>
 
 
   ![ Git ](https://img.shields.io/badge/-Git-black?style=flat-square&logo=git)
