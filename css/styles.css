@@ -379,9 +379,12 @@ h3.hello span {
 
 .portfolio .portfolio-item-inner .portfolio-img img {
     width: 100%;
+    transition: width 0.3s ease; /* 寬度變化的過渡效果 */
     display: block;
 }
-
+.portfolio .portfolio-item-inner .portfolio-img img:hover {
+    width: 110%;
+}
 /* contact */
 .contact-title {
     color: var(--skin-color);
